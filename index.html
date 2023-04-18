@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="icons/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="icons/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="icons/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="icons/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="icons/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="icons/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="icons/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="icons/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="icons/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="icons/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="icons/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="icons/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <title>Game store</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <input type="checkbox" class="sidebar__toggle" id="side-toggle" />
+        <label for="side-toggle" class="sidebar__button">
+          <span class="sidebar__icon"></span>
+        </label>
+        <nav class="sidebar__nav">
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a href="#!" class="sidebar__link">Аренда консолей</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#!" class="sidebar__link">Командные соревнования</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#!" class="sidebar__link">Аренда сервера</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#!" class="sidebar__link">Сообщество</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#!" class="sidebar__link">Работай и играй</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header">
+        <a href="#!" class="header__logo logo">
+          <i class="logo__img icon-gamepad"></i>
+          <p class="logo__text">Gaming club</p>
+        </a>
+        <div class="header__info">
+          <h4 class="title-4 mb-2">Твоя игровая станция</h4>
+          <h1 class="title-1">Погрузись в мир современных игр</h1>
+          <button id="button_modal" class="btn">Выбрать приставку</button>
+        </div>
+        <div class="header__line">
+          <p class="header__line__text">О нас</p>
+          <div class="header__img">
+            <img src="icons/header-1.png" alt="img" />
+            <img src="icons/header-2.png" alt="img" />
+            <img src="icons/header-3.png" alt="img" />
+            <img src="icons/header-4.png" alt="img" />
+          </div>
+        </div>
+      </div>
+
+      <div class="gamers">
+        <h3 class="title-3 title-3_green-light gamers__title">Top 3 players</h3>
+
+        <img src="img/player-1.png" alt="gamer" class="gamers__img" />
+        <div class="gamers__text">
+          <h3 class="title-3 title-3_white">Лиза Фролова</h3>
+          <p class="gamers__score">score 2953</p>
+        </div>
+
+        <img src="img/player-2.png" alt="gamer" class="gamers__img" />
+        <div class="gamers__text">
+          <h3 class="gamers__title-3 title-3 title-3_white">Андрей Степанов</h3>
+          <p class="gamers__score">score 2453</p>
+        </div>
+
+        <img src="img/player-3.png" alt="gamer" class="gamers__img" />
+        <div class="gamers__text">
+          <h3 class="title-3 title-3_white">Иван Савельев</h3>
+          <p class="gamers__score">score 2253</p>
+        </div>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <i class="feature__icon icon-steam2"></i>
+          <h3 class="feature__title title-3">Лучшая игровая плаформа</h3>
+          <p class="feature__text">
+            Как уже неоднократно упомянуто, базовые сценарии поведения
+            пользователей освещают чрезвычайно интересные особенности картины.
+          </p>
+        </div>
+
+        <div class="feature">
+          <i class="feature__icon icon-trophy"></i>
+          <h3 class="feature__title title-3">Еженедельные турниры</h3>
+          <p class="feature__text">
+            Как уже неоднократно упомянуто, базовые сценарии поведения
+            пользователей освещают чрезвычайно интересные особенности картины.
+          </p>
+        </div>
+
+        <div class="feature">
+          <i class="feature__icon icon-headphones"></i>
+          <h3 class="feature__title title-3">Онлайн общение</h3>
+          <p class="feature__text">
+            Как уже неоднократно упомянуто, базовые сценарии поведения
+            пользователей освещают чрезвычайно интересные особенности картины.
+          </p>
+        </div>
+
+        <div class="feature">
+          <i class="feature__icon icon-earth"></i>
+          <h3 class="feature__title title-3">Сообщество во всем мире</h3>
+          <p class="feature__text">
+            Как уже неоднократно упомянуто, базовые сценарии поведения
+            пользователей освещают чрезвычайно интересные особенности картины.
+          </p>
+        </div>
+
+        <div class="feature">
+          <i class="feature__icon icon-bubbles2"></i>
+          <h3 class="feature__title title-3">Онлайн чат с поддержкой</h3>
+          <p class="feature__text">
+            Как уже неоднократно упомянуто, базовые сценарии поведения
+            пользователей освещают чрезвычайно интересные особенности картины.
+          </p>
+        </div>
+
+        <div class="feature">
+          <i class="feature__icon icon-cart"></i>
+          <h3 class="feature__title title-3">Удобная система оплаты</h3>
+          <p class="feature__text">
+            Как уже неоднократно упомянуто, базовые сценарии поведения
+            пользователей освещают чрезвычайно интересные особенности картины.
+          </p>
+        </div>
+      </div>
+
+      <div class="banner-img">
+        <img
+          src="img/img1.png"
+          alt="img"
+          class="banner-img__img banner-img__img-1"
+        />
+        <img
+          src="img/img2.png"
+          alt="img"
+          class="banner-img__img banner-img__img-2"
+        />
+      </div>
+
+      <div class="banner-text">
+        <h4 class="title-4 mb-4">Веди команду к победе</h4>
+        <h2 class="title-2 mb-3">Лучшее место для онлайн соревнований</h2>
+        <p class="mb-4">
+          Как уже неоднократно упомянуто, базовые сценарии поведения
+          пользователей освещают чрезвычайно интересные особенности картины.
+        </p>
+        <button class="btn">Создать команду</button>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img src="img/Rectangle1.png" alt="img" class="card__img" />
+          <h5 class="card__title">РС</h5>
+
+          <div class="card__content">
+            <i class="card__icon icon-location2"></i>
+            <p class="card__text">EUR</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-users"></i>
+            <p class="card__text">20+ players</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-credit-card"></i>
+            <p class="card__text">от 100руб</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-display"></i>
+            <p class="card__text">4к монитор</p>
+          </div>
+          <button class="btn card__btn">Выбрать платформу</button>
+        </div>
+
+        <div class="card">
+          <img src="img/Rectangle2.png" alt="img" class="card__img" />
+          <h5 class="card__title">Play Station</h5>
+
+          <div class="card__content">
+            <i class="card__icon icon-location2"></i>
+            <p class="card__text">EUR</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-users"></i>
+            <p class="card__text">20+ players</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-credit-card"></i>
+            <p class="card__text">от 100руб</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-display"></i>
+            <p class="card__text">4к монитор</p>
+          </div>
+          <button class="btn card__btn">Выбрать платформу</button>
+        </div>
+
+        <div class="card">
+          <img src="img/Rectangle3.png" alt="img" class="card__img" />
+          <h5 class="card__title">X-BOX</h5>
+
+          <div class="card__content">
+            <i class="card__icon icon-location2"></i>
+            <p class="card__text">EUR</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-users"></i>
+            <p class="card__text">20+ players</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-credit-card"></i>
+            <p class="card__text">от 100руб</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-display"></i>
+            <p class="card__text">4к монитор</p>
+          </div>
+          <button class="btn card__btn">Выбрать платформу</button>
+        </div>
+
+        <div class="card">
+          <img src="img/Rectangle4.png" alt="img" class="card__img" />
+          <h5 class="card__title">Nintendo</h5>
+
+          <div class="card__content">
+            <i class="card__icon icon-location2"></i>
+            <p class="card__text">EUR</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-users"></i>
+            <p class="card__text">20+ players</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-credit-card"></i>
+            <p class="card__text">от 100руб</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-display"></i>
+            <p class="card__text">4к монитор</p>
+          </div>
+          <button class="btn card__btn">Выбрать платформу</button>
+        </div>
+
+        <div class="card">
+          <img src="img/Rectangle5.png" alt="img" class="card__img" />
+          <h5 class="card__title">Steam deck</h5>
+
+          <div class="card__content">
+            <i class="card__icon icon-location2"></i>
+            <p class="card__text">EUR</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-users"></i>
+            <p class="card__text">20+ players</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-credit-card"></i>
+            <p class="card__text">от 100руб</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-display"></i>
+            <p class="card__text">4к монитор</p>
+          </div>
+          <button class="btn card__btn">Выбрать платформу</button>
+        </div>
+
+        <div class="card">
+          <img src="img/Rectangle6.png" alt="img" class="card__img" />
+          <h5 class="card__title">Mobile</h5>
+
+          <div class="card__content">
+            <i class="card__icon icon-location2"></i>
+            <p class="card__text">EUR</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-users"></i>
+            <p class="card__text">20+ players</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-credit-card"></i>
+            <p class="card__text">от 100руб</p>
+          </div>
+
+          <div class="card__content">
+            <i class="card__icon icon-display"></i>
+            <p class="card__text">4к монитор</p>
+          </div>
+          <button class="btn card__btn">Выбрать платформу</button>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery__item gallery__item-1">
+          <img src="img/gal-1.png" alt="img" class="gallery__img" />
+        </div>
+
+        <div class="gallery__item gallery__item-2">
+          <img src="img/gal-2.png" alt="img" class="gallery__img" />
+        </div>
+
+        <div class="gallery__item gallery__item-3">
+          <img src="img/gal-3.png" alt="img" class="gallery__img" />
+        </div>
+
+        <div class="gallery__item gallery__item-4">
+          <img src="img/gal-4.png" alt="img" class="gallery__img" />
+        </div>
+
+        <div class="gallery__item gallery__item-5">
+          <img src="img/gal-5.png" alt="img" class="gallery__img" />
+        </div>
+
+        <div class="gallery__item gallery__item-6">
+          <img src="img/gal-6.png" alt="img" class="gallery__img" />
+        </div>
+
+        <div class="gallery__item gallery__item-7">
+          <img src="img/gal-7.png" alt="img" class="gallery__img" />
+        </div>
+
+        <div class="gallery__item gallery__item-8">
+          <img src="img/gal-8.png" alt="img" class="gallery__img" />
+        </div>
+
+        <div class="gallery__item gallery__item-9">
+          <img src="img/gal-9.png" alt="img" class="gallery__img" />
+        </div>
+
+        <div class="gallery__item gallery__item-10">
+          <img src="img/gal-10.png" alt="img" class="gallery__img" />
+        </div>
+
+        <div class="gallery__item gallery__item-11">
+          <img src="img/gal-11.png" alt="img" class="gallery__img" />
+        </div>
+
+        <div class="gallery__item gallery__item-12">
+          <img src="img/gal-12.png" alt="img" class="gallery__img" />
+        </div>
+
+        <div class="gallery__item gallery__item-13">
+          <img src="img/gal-13.png" alt="img" class="gallery__img" />
+        </div>
+
+        <div class="gallery__item gallery__item-14">
+          <img src="img/gal-14.png" alt="img" class="gallery__img" />
+        </div>
+      </div>
+
+      <div class="footer">
+        <a href="#!" class="logo mb-8">
+          <i class="logo__img icon-gamepad"></i>
+          <p class="logo__text">Gaming club</p>
+        </a>
+        <div class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#!" class="nav__link">Аренда консолей</a>
+            </li>
+            <li class="nav__item">
+              <a href="#!" class="nav__link">Командные соревнования</a>
+            </li>
+            <li class="nav__item">
+              <a href="#!" class="nav__link">Аренда сервера</a>
+            </li>
+            <li class="nav__item">
+              <a href="#!" class="nav__link">Сообщество</a>
+            </li>
+            <li class="nav__item">
+              <a href="#!" class="nav__link">Работай и играй</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1><b> ВЫБОР ПРИСТАВКИ </b></h1>
+      <p>
+        <b> PlayStation 5 </b> - молниеносная скорость загрузки благодаря
+        сверхскоростному накопителю SSD, невероятный эффект погружения благодаря
+        тактильной отдаче, адаптивным спусковым кнопкам и 3D-звуку, а также
+        потрясающие игры нового поколения для PlayStation. Невероятно мощные
+        центральный и графический процессоры, а также SSD-диск с интегрированной
+        системой ввода-вывода; <br /><br />
+        <b>Xbox Series S 512 ГБ SSD </b> - постройте библиотеку цифровых игр.
+        Ваши игры, файлы и резервные копии надёжно хранятся в облаке. К тому же
+        вам определённо понравится возможность оформлять предварительный заказ и
+        предустанавливать предстоящие релизы, чтобы иметь возможность начать
+        играть сразу после их запуска; <br /><br />
+        <b>Nintendo Switch OLED 64 ГБ </b>- с красочным 7-дюймовым экраном,
+        также включает широкую регулируемую опору для настольного режима, новую
+        док-станцию с портом LAN для стабильной игры онлайн, 64 ГБ внутренней
+        памяти и встроенные динамики с улучшенным звуком для настольного и
+        портативного режимов. <br /><br />
+        <b> Valve Steam Deck 512 ГБ SSD </b>- современная портативная приставка
+        с целым набором уникальных опций. Ощутите силу высокой
+        производительности и опробуйте безграничные возможности консоли — где
+        угодно и когда угодно. Преимущества Valve Steam Deck Valve Steam Deck
+        позволит вам наслаждаться любимыми играми из Steam в любом месте и в
+        любое время.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
